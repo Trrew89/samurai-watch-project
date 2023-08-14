@@ -22,8 +22,8 @@ const Auth = () => {
   
   const connectToMatrica = async(e) => {
     e.preventDefault();
-    const currentUrl = window.location.href;
-    router.push(`https://matrica.io/oauth2?client_id=bf4ca2c4fb1defc&scope=profile%20nfts&response_type=code&redirect_uri=${currentUrl}&code_challenge=gZZ8J4RSrIrrJVRoGSMgJ17borOtw4vwKBNnwqkBoro&code_challenge_method=S256`)
+    const currentUrl = window.location.href.split('?error');
+    router.push(`https://matrica.io/oauth2?client_id=bf4ca2c4fb1defc&scope=profile%20nfts&response_type=code&redirect_uri=${currentUrl[0]}&code_challenge=gZZ8J4RSrIrrJVRoGSMgJ17borOtw4vwKBNnwqkBoro&code_challenge_method=S256`)
   }
 
   const getUserPermisson = async () => {
