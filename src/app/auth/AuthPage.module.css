@@ -1,0 +1,23 @@
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+}
+
+
+.loading {
+    position: relative;
+    left: 47%;
+    top: 50%;
+}

@@ -1,0 +1,31 @@
+.content{
+    width: 100%;
+    min-height: 480px;
+    max-height: 720px;
+    display: flex;
+    padding-top: 90px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+.disconnect_button{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    z-index: 1;
+}
+
+.centerWrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.stream_chat {
+    height: 65vh;
+    width: 550px;
+    padding-top: 30px;
+    padding-right: 50px;
+} 
